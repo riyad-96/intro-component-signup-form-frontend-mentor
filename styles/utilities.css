@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  padding-inline: 2rem;
+  padding-block-start: 2rem;
+
+  @media(width < 800px) {
+    padding-block-end: 5rem;
+  }
+}
+
+
+.intro-container {
+
+  @media(width < 800px) {
+    text-align: center;
+  }
+}
+
+.link-hv-ef {
+  transition: 200ms;
+  text-underline-offset: 5px;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 1px;
+  }
+}
+
+.input-group {
+  margin-block-end: 2rem;
+}
+
+
+.show {
+  display: block;
+}

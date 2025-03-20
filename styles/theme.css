@@ -1,0 +1,33 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --dark-green: hsl(154, 59%, 41%);
+  --btn-hover-bg: hsl(154, 59%, 61%);
+
+  --blue: hsl(248, 32%, 49%);
+
+  --white: hsl(0, 0%, 100%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  background-color: var(--red);
+  color: #fff;
+}
+
+.main-bg {
+  background-image: url('../assets/images/bg-intro-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media(width < 600px) {
+    background-image: url('../assets/images/bg-intro-mobile.png');
+  }
+}
+
+.form {
+  background-color: var(--white);
+  color: var(--grayish-blue);
+}

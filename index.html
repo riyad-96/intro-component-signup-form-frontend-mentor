@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="9OQVhck4qd3nXu2yheAXjZWiuJH1c4er0bLx8ErttzE" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="./main.js" defer></script>
+</head>
+
+<body class="debug">
+
+  <div class="main-bg">
+
+    <main>
+
+      <div class="intro-container">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+          understanding how developers think is invaluable.</p>
+      </div>
+
+      <div class="form-container">
+        <div class="free-trial-section">
+          <p><a href="#" class="link-hv-ef">Try it free 7 days</a> then $20/mo. thereafter</p>
+        </div>
+
+        <div class="form">
+          <div class="input-group">
+            <input type="text" class="input1" placeholder="First Name" autocomplete="off" spellcheck="false">
+            <div class="error-icon"><img src="./assets/images/icon-error.svg" alt="error icon"></div>
+            <span class="error-message">First Name cannot be empty</span>
+          </div>
+
+          <div class="input-group">
+            <input type="text" class="input2" placeholder="Last Name" autocomplete="off" spellcheck="false">
+            <div class="error-icon"><img src="./assets/images/icon-error.svg" alt="error icon"></div>
+            <span class="error-message">Last Name cannot be empty</span>
+          </div>
+
+          <div class="input-group">
+            <input type="email" class="input3" id="emailInput" placeholder="Email Address" autocomplete="off"
+              spellcheck="false">
+            <div class="error-icon" id="mailErrorIcon"><img src="./assets/images/icon-error.svg" alt="error icon"></div>
+            <span class="error-message" id="mailErrorMessage">Looks like this is not an email</span>
+          </div>
+
+          <div class="input-group">
+            <input type="password" class="input4" minlength="6" placeholder="Password" autocomplete="off">
+            <div class="error-icon last-icon" title="Password should be at least 6 characters or more"><img
+                src="./assets/images/icon-error.svg" alt="error icon"></div>
+            <span class="error-message last-message">Password must be 6+ characters</span>
+          </div>
+
+          <button class="btn" id="claimBtn">CLAIM YOUR FREE TRIAL</button>
+
+          <P>By clicking the button, you are agreeing to our <a href="#" class="link-hv-ef">Terms and Services</a></P>
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>

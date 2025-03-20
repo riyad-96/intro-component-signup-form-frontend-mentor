@@ -1,0 +1,128 @@
+h1 {
+  font-size: clamp(2rem, 1.5455rem + 1.6162vw, 3rem);
+  line-height: 2.5lh;
+
+  @media(width < 700px) {
+    line-height: 2lh;
+  }
+}
+
+.free-trial-section {
+  background-color: var(--blue);
+  border-radius: 0.6rem;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 1.5rem;
+  box-shadow: 0 7px 0 hsla(0, 0%, 0%, 0.15);
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  a {
+    font-weight: 600;
+    color: inherit;
+  }
+}
+
+
+.form {
+  border-radius: 0.6rem;
+  box-shadow: 0 8px 0 hsla(0, 0%, 0%, 0.15);
+  padding: 2rem;
+}
+
+.input-group input {
+  min-inline-size: 0;
+  inline-size: 100%;
+  font-family: Poppins;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.3rem;
+  outline: none;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.input-group input:focus {
+  outline: 2px solid var(--blue);
+}
+
+.btn {
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  inline-size: 100%;
+  padding-block-start: 0.7rem;
+  padding-block-end: 0.6rem;
+  border-radius: 0.3rem;
+  background-color: var(--green);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--dark-green);
+  transition: 100ms;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+  box-shadow: 0 3px 0 var(--green);
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.form p {
+  font-size: 0.75rem;
+  text-align: center;
+
+  a {
+    color: var(--red)
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ! error icon and message styling */
+
+.input-group {
+  position: relative;
+}
+
+.error-icon,
+.error-message {
+  position: absolute;
+  right: 0;
+}
+
+.error-icon {
+  right: 20px;
+  bottom: 50%;
+  transform: translateY(50%);
+  display: none;
+}
+
+.error-message {
+  bottom: -20px;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--red);
+  display: none;
+}
+
+.input-group input.error-state {
+  outline: 2px solid var(--red);
+}
+
+.input-group input.mail-error-text-clr {
+  color: var(--red);
+}

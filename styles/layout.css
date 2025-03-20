@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  gap: 2rem;
+
+  @media(width < 800px) {
+    flex-direction: column;
+
+    .intro-container,
+    .form-container {
+      flex-grow: 0;
+      margin-inline: auto;
+    }
+  }
+}
+
+.intro-container,
+.form-container {
+  inline-size: 100%;
+  max-inline-size: 540px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
