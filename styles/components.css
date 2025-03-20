@@ -84,7 +84,8 @@ h1 {
   text-align: center;
 
   a {
-    color: var(--red)
+    color: var(--red);
+    font-weight: 600;
   }
 
   a:hover {
